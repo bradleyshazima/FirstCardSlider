@@ -4,14 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Card Slider Template</title>
+    <title>Glidejs</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="glide.core.css">
+    <link rel="stylesheet" href="glide.theme.css">
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
 <body>
-    <section>
-        
+    <section class="container" id="first">
+        <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <div class="glide__slides">
+                <div class="glide__slide">Slide One</div>
+                <div class="glide__slide">Slide Two</div>
+                <div class="glide__slide">Slide Three</div>
+                <div class="glide__slide">Slide Four</div>
+                <div class="glide__slide">Slide Five</div>
+              </div>
+            </div>
+
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
     </section>
+    
 </body>
 
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
 <script src="scripts.js"></script>
 </html>
